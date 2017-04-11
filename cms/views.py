@@ -8,7 +8,7 @@ def show(request):
     record = Pages.objects.all()
     respuesta = "Page Found: "
     for page in record:
-        respuesta += "<li>/" + page.name + " --> " + page.page 
+        respuesta += "<li>/" + page.name + " --> " + page.page
     return HttpResponse(respuesta)
 
 
